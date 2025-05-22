@@ -1,0 +1,193 @@
+---
+layout: default
+title: Skills
+---
+
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Technical Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+            <!-- Cloud & Infrastructure -->
+            <div class="skill-category">
+                <h3>Cloud & Infrastructure</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cloud"></i>
+                        <span>Cloud Architecture</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-server"></i>
+                        <span>Infrastructure as Code (IaC)</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>PCI Compliance</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DevOps Tools -->
+            <div class="skill-category">
+                <h3>DevOps Tools</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cube"></i>
+                        <span>Kubernetes</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code-branch"></i>
+                        <span>GitOps</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>CI/CD</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Azure DevOps</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Octopus Deploy</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>.NET Core</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>Go</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operating Systems & Server Management -->
+            <div class="skill-category">
+                <h3>Operating Systems & Server Management</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-linux"></i>
+                        <span>Linux (Oracle Linux, Ubuntu)</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-server"></i>
+                        <span>VMware</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-network-wired"></i>
+                        <span>HAProxy</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Configuration Management -->
+            <div class="skill-category">
+                <h3>Configuration Management</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>Puppet</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>Ansible</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testing & Quality -->
+            <div class="skill-category">
+                <h3>Testing & Quality</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fas fa-vial"></i>
+                        <span>Cypress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-category {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-color);
+}
+
+.skill-category h3 {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.skill-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    background: var(--background-color);
+    transition: transform 0.2s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-2px);
+}
+
+.skill-item i {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.skill-item span {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>

@@ -1,0 +1,203 @@
+---
+layout: default
+title: Professional Experience
+---
+
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Professional Experience</h2>
+        </div>
+
+        <div class="timeline">
+            <!-- Buckaroo - Head of Platform -->
+            <div class="card experience-card">
+                <h3 class="job-title">Head of Platform</h3>
+                <p class="company">Buckaroo</p>
+                <p class="location">Utrecht, Netherlands · Hybrid</p>
+                <p class="duration">January 2024 - Present</p>
+                <div class="description">
+                    <p>Leading a team of DevOps engineers, responsible for driving the strategy, design, and implementation of a centralized internal developer platform that powers multiple engineering teams across the organization.</p>
+                    <p>Our mission is to empower developers by abstracting infrastructure complexity and providing a seamless, scalable, and secure platform that enables faster delivery of high-quality software.</p>
+                    <p>Key responsibilities include:</p>
+                    <ul>
+                        <li>Team Leadership: Leading a team of skilled DevOps engineers, providing technical guidance, mentoring, and fostering a culture of ownership and collaboration.</li>
+                        <li>Platform Engineering: Designing and evolving a centralized platform that supports self-service infrastructure, CI/CD pipelines, observability, and runtime environments.</li>
+                        <li>Developer Experience: Continuously improving the usability, reliability, and performance of the platform to enhance the developer experience and reduce cognitive load.</li>
+                        <li>Operations & Reliability: Ensuring the platform itself is robust, highly available, secure, and monitored, with clearly defined SLAs and incident response practices.</li>
+                        <li>Cross-functional Collaboration: Working closely with development teams, security, and product stakeholders to align platform capabilities with engineering needs and business goals.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Buckaroo - DevOps Technical Lead -->
+            <div class="card experience-card">
+                <h3 class="job-title">DevOps Technical Lead</h3>
+                <p class="company">Buckaroo</p>
+                <p class="location">Utrecht, Netherlands</p>
+                <p class="duration">July 2022 - February 2024</p>
+                <div class="description">
+                    <ul>
+                        <li>Implemented Kubernetes(K8s) clusters to manage the transition to fully managed containerized workloads</li>
+                        <li>Set up a landingzone following the AWS well architected framework</li>
+                        <li>Migrated all workloads to AWS with minimal downtime using DMS for online datastore replication, ensuring cloud-native migration</li>
+                        <li>Ensured development teams could work efficiently following DevOps principles</li>
+                        <li>Architected AWS accounts to meet PCI-compliance standards</li>
+                        <li>Created internal applications and packages for development teams to easily deploy infrastructure or set up CI/CD</li>
+                        <li>Provided training and instruction to development teams on solutions and frameworks</li>
+                    </ul>
+                    <p class="skills">Skills: Amazon Web Services (AWS) · Infrastructure as code (IaC) · Azure DevOps · DevOps</p>
+                </div>
+            </div>
+
+            <!-- Buckaroo - DevOps Engineer -->
+            <div class="card experience-card">
+                <h3 class="job-title">DevOps Engineer</h3>
+                <p class="company">Buckaroo</p>
+                <p class="location">Utrecht, Netherlands</p>
+                <p class="duration">January 2020 - December 2022</p>
+                <div class="description">
+                    <p>Skills and technologies: Azure DevOps, Octopus deploy, Docker, Kubernetes, Unix server management, HAProxy load balancing, .NET core, Python, Cypress</p>
+                </div>
+            </div>
+
+            <!-- Buckaroo - System Administrator -->
+            <div class="card experience-card">
+                <h3 class="job-title">System Administrator</h3>
+                <p class="company">Buckaroo</p>
+                <p class="location">Utrecht, Netherlands</p>
+                <p class="duration">August 2017 - January 2020</p>
+                <div class="description">
+                    <ul>
+                        <li>Unix administration (Oracle Linux & Ubuntu 16.04/18.04)</li>
+                        <li>Advised, set up and managed all hardware in the datacenters</li>
+                        <li>VMware multi cluster management</li>
+                        <li>GitOps implementation</li>
+                        <li>Configuration management (Puppet & Ansible)</li>
+                        <li>Set up new production environments adhering to the latest DevOps standards</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- MyBit - Senior System Administrator -->
+            <div class="card experience-card">
+                <h3 class="job-title">Senior System Administrator</h3>
+                <p class="company">MyBit Multimedia development BV</p>
+                <p class="location">Media park, Hilversum, Netherlands</p>
+                <p class="duration">January 2015 - August 2017</p>
+                <div class="description">
+                    <ul>
+                        <li>Coordinated and executed system and network-related tasks</li>
+                        <li>Updated, maintained, and monitored all systems and connections</li>
+                        <li>Executed tasks within infrastructure projects or other projects requiring infrastructure modifications</li>
+                        <li>Performed and verified backups</li>
+                        <li>Managed documentation, passwords, and access policies</li>
+                        <li>Supported the support department during emergencies</li>
+                        <li>Ensured compliance with information security agreements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Newsbyte - Support and Implementation -->
+            <div class="card experience-card">
+                <h3 class="job-title">Support and Implementation Specialist</h3>
+                <p class="company">Newsbyte B.V.</p>
+                <p class="location">Hilversum Media Park - Gateway D, Netherlands</p>
+                <p class="duration">March 2014 - June 2014</p>
+                <div class="description">
+                    <ul>
+                        <li>Provided technical support for implementations and installations in network and distribution systems</li>
+                        <li>Maintained office automation systems</li>
+                        <li>Developed and maintained documentation for existing systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--secondary-color), var(--accent-color));
+}
+
+.experience-card {
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-color);
+}
+
+.job-title {
+    color: var(--text-color) !important;
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.company {
+    color: var(--secondary-color) !important;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.location {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.duration {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-top: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.description ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.description li {
+    margin-bottom: 0.5rem;
+}
+
+.skills {
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 0;
+    }
+
+    .experience-card {
+        margin-left: 20px;
+    }
+}
+</style>

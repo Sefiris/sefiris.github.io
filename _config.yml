@@ -1,1 +1,34 @@
-theme: jekyll-theme-cayman
+title: Dave van Duivenbode
+description: Head of Platform | Engineer passionate about building scalable and efficient systems
+url: "https://sefiris.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Personal information
+name: Dave van Duivenbode
+role: Head of Platform
+location: Utrecht, The Netherlands
+email: dave.v.duivenbode@gmail.com
+linkedin: https://www.linkedin.com/in/dave-van-duivenbode-49813399/
+github: https://github.com/Sefiris
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
