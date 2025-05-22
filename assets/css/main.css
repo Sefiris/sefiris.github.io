@@ -23,7 +23,27 @@ body {
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-dark);
+    background: linear-gradient(180deg,
+        var(--background-dark) 0%,
+        var(--background-light) 40%,
+        var(--background-light) 60%,
+        var(--background-dark) 100%
+    );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(0, 180, 216, 0.1) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .container {
@@ -94,28 +114,15 @@ body {
 /* Main Content */
 .site-content {
     margin-top: 60px;
-    min-height: calc(100vh - 120px);
+    flex: 1 0 auto;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 5rem 0;
-    background: linear-gradient(to bottom, var(--background-dark), var(--background-light));
-    margin-bottom: 1rem;
     position: relative;
     overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at center, rgba(0, 180, 216, 0.1) 0%, transparent 70%);
-    pointer-events: none;
 }
 
 .hero h1 {
@@ -162,12 +169,12 @@ body {
 
 /* Section Styles */
 .section {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .section-title h2 {
@@ -196,7 +203,7 @@ body {
     border-radius: var(--border-radius);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border: 1px solid var(--border-color);
     transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
@@ -208,11 +215,27 @@ body {
 
 /* Footer Styles */
 .site-footer {
-    background-color: var(--primary-color);
+    background-color: transparent;
     color: var(--text-color);
     padding: 2rem 0;
     text-align: center;
-    border-top: 1px solid var(--border-color);
+    border-top: none;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        var(--border-color) 50%,
+        transparent 100%
+    );
 }
 
 .social-links {
